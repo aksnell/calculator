@@ -19,6 +19,12 @@ body {
 }
 
 .calc-display {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 3rem;
+  padding: 0.2rem;
+  color: #cccccc;
   height: 4rem;
 }
 
