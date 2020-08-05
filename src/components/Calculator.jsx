@@ -22,6 +22,8 @@ export default function Calculator() {
     }
 
     const handleEqual = () => {
+        // Don't update if last input is another function
+        if (isNaN(output.slice(-1))) return
         setOutput(eval(output).toString())
     }
     
