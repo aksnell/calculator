@@ -10,3 +10,46 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.calculator {
+  margin: 0.1rem;
+  width: fit-content;
+  padding: 0.1rem;
+  background-color: black;
+}
+
+.calc-display {
+  height: 4rem;
+}
+
+.calc-buttons {
+  flex: 1;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.calc-button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: none;
+}
+
+.calc-button.digit {
+  color: #cccccc;
+  background-color: #333333;
+}
+
+.calc-button.func {
+  color: #cccccc;
+  background-color: orangered;
+}
+
+.calc-button.x2 {
+  grid-column: span 2;
+}
+
+.calc-button.x3 {
+  grid-column: span 3;
+}
